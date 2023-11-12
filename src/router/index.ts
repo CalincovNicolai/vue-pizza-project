@@ -1,15 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Header from '../modules/header/Header.vue';
+import Restaurant from '@modules/restaurants/Restaurant.vue';
+import MenuList from '@modules/menu-list/MenuList.vue';
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes: [
-        {
-            path: '/',
-            name: 'home',
-            component: Header
-        }
-    ]
+  history: createWebHistory(),
+  routes: [
+    {
+      path: '/',
+      name: 'Delivery Food — доставка еды на дом',
+      component: Restaurant
+    },
+    {
+      path: '/restaurant/:name',
+      name: 'PizzaBurger — доставка еды на дом',
+      component: MenuList
+    },
+  ]
 });
 
 export default router;

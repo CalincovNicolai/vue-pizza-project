@@ -9,7 +9,12 @@
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@store/*": ["./src/store/*"],
+      "@db/*": ["./src/db/*"],
+      "@types/*": ["./src/types/*"]
     },
 
     /* Bundler mode */
